@@ -9,4 +9,4 @@ function getDaysBeforeBirthday(nextBirthdayDate) {
   return nextBirthday;
 }
 
-console.log(getDaysBeforeBirthday("2023 09 18"));
+console.log(getDaysBeforeBirthday("2023 06 25"));
