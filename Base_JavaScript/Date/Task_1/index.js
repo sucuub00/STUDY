@@ -1,17 +1,18 @@
 let now = new Date();
 console.log(now);
 
+const addZero = (number) => (number < 10 ? `0${number}` : number);
+
 function newDay(date, separator = '.') {
   let day = date.getUTCDate();
-  if (day < 10) {
-    day = `0${day}`;
-  }
+  day = addZero(day);
+
   let month = date.getUTCMonth() + 1;
-  if (month < 10) {
-    month = `0${month}`;
-  }
+  month = addZero(month);
+
   let year = date.getUTCFullYear();
   let newDate = day + separator + month + separator + year;
+
   return newDate;
 }
 
