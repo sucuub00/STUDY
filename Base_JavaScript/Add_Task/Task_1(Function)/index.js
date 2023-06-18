@@ -2,8 +2,7 @@ function checkQuestionAnswer(question, correctAnswer) {
   let questionForUser = prompt(question);
 
   if (questionForUser) {
-    questionForUser = questionForUser.toLowerCase();
-    questionForUser = questionForUser.trim();
+    questionForUser = questionForUser.toLowerCase().trim();
   } else {
     alert(`Обновите страницу и введите значение`);
     return;
