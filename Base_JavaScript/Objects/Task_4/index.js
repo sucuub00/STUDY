@@ -10,7 +10,7 @@ function giveJobToStudent(student, jobName) {
   );
 
   student.job = jobName;
-  return student;
+  return { ...student };
 }
-giveJobToStudent(student, 'веб-разработчик');
-console.log(student);
+
+console.log(giveJobToStudent(student, 'веб-разработчик'));
