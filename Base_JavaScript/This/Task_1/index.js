@@ -22,7 +22,11 @@ const student = {
   },
 };
 
-console.log(student.improveLevel());
-console.log(student.improveLevel());
-console.log(student.improveLevel());
-console.log(student.improveLevel());
+console.log(
+  student
+    .improveLevel()
+    .improveLevel()
+    .improveLevel()
+    .improveLevel()
+    .improveLevel()
+);
