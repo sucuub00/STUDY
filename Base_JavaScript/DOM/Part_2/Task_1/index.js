@@ -19,5 +19,6 @@ function myCreateElement(text, id) {
   const task = document.createElement('div');
   task.id = id;
   task.textContent = text;
+  task.className = 'task-item';
   return task;
 }
