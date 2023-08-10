@@ -23,7 +23,6 @@ function validateTask(value) {
   const result = tasks.some((task) => {
     return task.text.trim().toLowerCase() === value.trim().toLowerCase();
   });
-  console.log(result);
   if (result) {
     errorBlock.innerHTML = `<span>Задача с таким названием уже существует.</span>`;
     return false;
